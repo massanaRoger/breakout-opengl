@@ -1,0 +1,10 @@
+^C:\USERS\ROGER2\DOCUMENTS\PROGRAMMING\BREAKOUT-OPENGL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Roger2/Documents/programming/breakout-opengl -BC:/Users/Roger2/Documents/programming/breakout-opengl/build --check-stamp-file C:/Users/Roger2/Documents/programming/breakout-opengl/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
