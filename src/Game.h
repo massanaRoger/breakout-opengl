@@ -1,6 +1,9 @@
 #ifndef GAME_H
 #define GAME_H 
 
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
 // Represents the current state of the game
 enum GameState {
     GAME_ACTIVE,
